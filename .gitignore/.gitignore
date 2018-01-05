@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace chooseOne
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List<string> chooseOne = new List<string>();
+            chooseOne.Add("laugh");
+            chooseOne.Add("code");
+            chooseOne.Add("coffee");
+
+            Console.WriteLine("Let's think ?\n");
+            foreach (var i in chooseOne)
+            {
+                Console.WriteLine("If the deadline comming up,\nyou will need more");
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("{0}\n", i);
+                Console.ResetColor();
+            }
+            Console.WriteLine("\nWhatever option you on, isn't correct, \nlet's solving that with");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("Agile");
+            Console.Read();
+        }
+    }
+}
+
